@@ -9,5 +9,8 @@ In this project, I attempted to utilize YOLOv5 7.0 along with a Logitech C270 we
 * torchvision
 ## Descriptions
 I attempted to use a Logitech C270 webcam to recognize the following components on my Arduino Uno: Power Input Socket, 16MHz Quartz Crystal, Reset Button, USB Connector, and ATmega328 Microcontroller. Due to some degree of blurriness even after manually adjusting the camera's focus, I included some blurred images in the augmented dataset during data augmentation.
+
 <img src="result.PNG" alt="result" width="550">
+
+## Usage
 
