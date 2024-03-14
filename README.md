@@ -13,4 +13,11 @@ I attempted to use a Logitech C270 webcam to recognize the following components 
 <img src="result.PNG" alt="result" width="550">
 
 ## Usage
+1. Download [YOLOv5 7.0](https://github.com/ultralytics/yolov5/tree/v7.0).
+2. Place all contents into the YOLOv5 7.0 directory.
+3. Open `detect.py`.
+4. Follow the internal comments to point the weights to your `best.pt` file path.
+5. Connect the webcam to the USB port and prepare an Arduino Uno..
+6. have fun :)
 
+If you prefer to use your own training images, replace the images in the `ardiuno_image folder` with your own and run the `Data_Augmentation.py` script to generate the training and validation sets. You can then manually label the images using websites like makesense.ai. After labeling, replace the augmented images and label files in the corresponding folders within the `mydata` directory. Finally, run `train.py` to train your model. The trained weights (.pt files) will be saved in `yolov5-7.0\runs\train\expX\weights`.
