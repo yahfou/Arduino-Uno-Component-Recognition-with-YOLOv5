@@ -2,7 +2,6 @@ import torch
 from torchvision import transforms
 from torchvision.transforms import functional as F
 import numpy as np
-import cv2
 from PIL import Image, ImageFilter
 import os
 
@@ -14,8 +13,8 @@ transform = transforms.Compose([
 ])
 
 # 設定原始圖片目錄和保存目錄
-original_images_dir = r'C:\Users\yahfou\Desktop\ardiuno_image'
-save_dir = r'C:\Users\yahfou\Desktop\ardiuno_data'
+original_images_dir = 'XXX/XXX/.../ardiuno_image'     # 更改為ardiuno_image資料夾位置
+save_dir = 'XXX/XXX/.../yolov5-7.0/mydata/Train/images/train'    # 更改為yolov5-7.0資料夾中訓練集(Train)或驗證集(Val)的位置
 
 option = int(input('訓練或驗證集? (訓練集:1，驗證集:2):'))
 
